@@ -12,7 +12,7 @@ This project allows users to register and applies an expert system to classify t
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/your-username/secure-reg-expert-system.git
+git clone https://github.com/Peterosas/secure_reg_expert_system.git
 cd secure-reg-expert-system
 ```
 
