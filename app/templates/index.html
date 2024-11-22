@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Expert System - Secure Registration{% endblock %}
+
+{% block content %}
+    <section class="hero animate__animated animate__fadeIn animate__delay-1s">
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Revolutionize Decision-Making</h1>
+            <h1 class="text-primary-gradient animate__animated animate__fadeInUp animate__delay-1.5s">AI-Powered Expertise</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-2s">Our Expert System provides accurate and reliable insights.</p>
+            <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2.5s">
+                <a href="#signup-form" class="button primary">Start Now</a>
+                <a href="#" class="button secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign Up Form Section -->
+    <section id="signup-form" class="signup-form signup-form-section">
+        <h2>Playground for Secure Registration</h2>
+        <form action="/signup" method="POST">
+            <!-- Email Field -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="user@hell0o.com" required><br>
+            
+            <!-- Age Field -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required><br>
+
+            <!-- Country Field -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="Nigeria">Ghana</option>
+                <option value="Nigeria">Nigeria</option>
+            </select><br>
+            
+            <!-- Income Field -->
+            <label for="income">Monthly Income (NGN):</label>
+            <input type="number" id="income" name="income" placeholder="Enter your monthly income" required><br>
+            <br /><br />
+            <button type="submit" class="submit-button">Check Tier</button>
+        </form>
+    </section>
+{% endblock %}
+    
+    
