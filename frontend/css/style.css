@@ -4,7 +4,7 @@ body {
     font-family: "Parkinsans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background: linear-gradient(to right, #121212, #161616);
+   
 }
 
 .navbar {
@@ -72,6 +72,10 @@ body {
     box-sizing: border-box;
 }
 
+.bg-dark {
+    background: linear-gradient(to right, #121212, #161616);
+}
+
 .text-primary-gradient {
     background: linear-gradient(to right, #D2F898, #F6F930);
     -webkit-background-clip: text;
@@ -135,3 +139,130 @@ body {
     background-color: white;
     color: #333;
 }
+
+/* Add these styles for the sign-up form section */
+
+/* Sign-Up Form Section */
+.signup-form {
+    background-color: #FFFFFF; /* Darker background to match the theme */
+    padding: 60px 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for emphasis */
+}
+
+/* Form Container */
+.signup-form .form-container {
+    padding: 24px;
+    border-radius: 8px;
+}
+
+/* Title */
+.signup-form h2 {
+    font-size: 2rem;
+    color: #000; /* Bright accent color */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Group */
+.signup-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Labels */
+.signup-form .form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white; /* Label text in white */
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form Inputs */
+.signup-form .form-group input,
+.signup-form .form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #333; /* Dark border to match theme */
+    background-color: #444;
+    color: white;
+}
+
+.signup-form .form-group input:focus,
+.signup-form .form-group select:focus {
+    border-color: #F6F930; /* Focus border color */
+    outline: none;
+}
+
+/* Submit Button */
+.signup-form button {
+    background-color: #F6F930;
+    color: black;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%; /* Full-width button */
+}
+
+.signup-form button:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* Form Spacing */
+.signup-form .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #121212; /* Dark background */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-menu li {
+    margin: 0;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #F6F930; /* Highlight color on hover */
+}
+

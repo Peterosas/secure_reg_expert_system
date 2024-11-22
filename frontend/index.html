@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="bg-dark">
     <nav class="navbar">
         <div class="logo"><img src="img/logo.png" alt="Group 3 AI" width="84px" /></div>
         <ul class="menu">
@@ -22,11 +22,11 @@
             <li><a href="#">Contact</a></li>
         </ul>
         <div class="signup">
-            <a href="#" class="signup-button">Try for free</a>
+            <a href="#" class="signup-button">Sign Up</a>
         </div>
     </nav>
 
-    <section class="hero animate__animated animate__fadeIn">
+    <section class="hero animate__animated animate__fadeIn animate__delay-1s">
         <div class="hero-content">
             <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Revolutionize Decision-Making</h1>
             <h1 class="text-primary-gradient animate__animated animate__fadeInUp animate__delay-1.5s">AI-Powered Expertise</h1>
@@ -37,6 +37,53 @@
             </div>
         </div>
     </section>
+
+    <!-- Sign Up Form Section -->
+    <section class="signup-form">
+        <div class="form-container animate__animated animate__fadeInLeft animate__delay-1s">
+            <h2>Playground</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                </div>
+    
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required />
+                </div>
+    
+                <div class="form-group">
+                    <label for="tier">Select Your Tier</label>
+                    <select id="tier" name="tier" required>
+                        <option value="">Choose a tier</option>
+                        <option value="basic">Basic</option>
+                        <option value="premium">Premium</option>
+                        <option value="elite">Elite</option>
+                    </select>
+                </div>
+    
+                <button type="submit" class="button primary">Check Tier</button>
+            </form>
+        </div>
+    </section>
+    
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 SecureRegExpertSystem. All Rights Reserved.</p>
+            <ul class="footer-menu">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
