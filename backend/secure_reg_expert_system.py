@@ -52,7 +52,7 @@ def rule_age(user_data):
 
 def rule_country(user_data):
     """Check if the country is high-risk."""
-    high_risk_countries = ["CountryX", "CountryY"]
+    high_risk_countries = ["Ghana", "Uganda"]
     if user_data["country"] in high_risk_countries:
         return 40
     return 0
@@ -60,7 +60,7 @@ def rule_country(user_data):
 
 def rule_income(user_data):
     """Check if the income is unusually high."""
-    if user_data["income"] > 1_000_000:
+    if user_data["income"] > 1000000:
         return 10
     return 0
 
@@ -76,10 +76,10 @@ expert_system.add_rule(rule_income)
 
 # Sample user data
 user_data = {
-    "email": "user@fraud.com",
-    "age": 15,
-    "country": "CountryZ",
-    "income": 1_200_000,
+    "email": "user@hell0o.com",
+    "age": 40,
+    "country": "Nigeria",
+    "income": 8000,
 }
 
 # Evaluate user data
